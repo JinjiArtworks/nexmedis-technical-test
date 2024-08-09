@@ -9,6 +9,7 @@ const router = createRouter({
     {
       path: '/',
       component: Layout, // set parents layouts. so the children component will rendered from parents 
+      meta: { requiresAuth: true },
       children: [
         {
           path: '/homepage',
